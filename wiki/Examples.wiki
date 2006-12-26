@@ -1,5 +1,3 @@
-#usage examples
-
 = Select =
 
 {{{
@@ -12,5 +10,5 @@ echo $q->sql();
 
 will output:
 {{{
-SELECT `my_table`.* from `my_table`, `another_table` WHERE `my_table`.`fk1` = `another_table`.`id`
+SELECT t0.* from `my_table` t0, `another_table` t1 WHERE t0.`fk1` = t1.`id`
 }}}
