@@ -10,5 +10,5 @@ echo $q->sql();
 
 will output:
 {{{
-SELECT t0.* from `my_table` t0, `another_table` t1 WHERE t0.`fk1` = t1.`id`
+SELECT t0.* FROM `my_table` as t0, `another_table` as t1 WHERE t0.`fk1` = t1.`id`
 }}}
